@@ -56,7 +56,7 @@ nav .logo:hover {
   background: red;
   display: block;
   margin: auto;           /* this is for transition in to out */
-  transition: 0.5s; 
+  transition: 0.6s; 
 }
 
 .nav-links ul li::before {
@@ -66,7 +66,7 @@ nav .logo:hover {
   background: red;
   display: block;
   margin: auto;           
-  transition: 0.5s; 
+  transition: 0.6s; 
 }
 
 .nav-links ul li:hover::after {      /* hover::after means only for content element*/
