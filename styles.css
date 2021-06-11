@@ -30,11 +30,18 @@ nav .logo {
   color: white;  
   border-bottom: 3px solid red;
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 nav .logo:hover {
   border: 3px solid red;
   transition: 0.7s;
+}
+
+.nav-links ul {
+  position: relative;
+  z-index: 2;
 }
 
 .nav-links ul li{
@@ -87,6 +94,7 @@ nav .logo:hover {
   transform: translate(-50%, -50%); /* to center the container class */
   text-align: center;
   font-family: 'Merriweather', serif;
+  z-index: 2;
 }
 
 .container h1 {
@@ -416,6 +424,9 @@ h3 {
   color: #fff;
   transition: 0.7s;
   border: 1px solid #fff;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .contact button:hover {
@@ -470,4 +481,25 @@ h3 {
   padding: 5px;
   border-radius: 10px;
   color: #000;
+}
+
+
+/* -- cursor style -- */
+
+body {
+  cursor: grab;
+}
+
+#cursor {
+  height: 40px;
+  width: 40px;
+  background: #f44336;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.3s;
+  display: none; 
+}
+
+div:hover ~ #cursor {
+  transform: scale(0.5);
 }
