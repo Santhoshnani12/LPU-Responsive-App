@@ -503,3 +503,19 @@ body {
 div:hover ~ #cursor {
   transform: scale(0.5);
 }
+
+
+/* scroll bar linear gradient color  */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #f44336);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  overflow-x: hidden;
+}
